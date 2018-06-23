@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DemoSC1</string>
+
+
+
+    <string name="mi_texto_de_prueba">Probando cambiar el texto</string>
+
+
+    <string name="desde_los_strings">Me llamo desde los strings</string>
+
+</resources>
