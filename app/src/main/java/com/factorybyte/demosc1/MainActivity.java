@@ -1,5 +1,6 @@
 package com.factorybyte.demosc1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView miimagen = findViewById(R.id.miimage);
 
+        Button vermas = findViewById(R.id.vermas);
+
 
         RequestOptions options = new RequestOptions();
 
@@ -33,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 .into(miimagen);
 
 
+
+        vermas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(getApplicationContext(), DetailActivity.class);
+                intent.putExtra("name", getResources().getString(R.string.name));
+                startActivity(intent);
+
+            }
+        });
 
 
 

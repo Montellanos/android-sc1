@@ -2,10 +2,16 @@
     <string name="app_name">DemoSC1</string>
 
 
-
     <string name="mi_texto_de_prueba">Probando cambiar el texto</string>
 
 
     <string name="desde_los_strings">Me llamo desde los strings</string>
+
+
+    <string name="name">Jorge Montellanos Díaz</string>
+
+    <string name="skills">Desarrollador, Ingeniero, JS, Android</string>
+
+    <string name="location">Tarija - Bolivia</string>
 
 </resources>
