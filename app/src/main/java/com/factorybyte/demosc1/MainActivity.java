@@ -13,6 +13,7 @@ import com.factorybyte.demosc1.adapters.ViewPagerAdapter;
 import com.factorybyte.demosc1.fragments.OptionAFragment;
 import com.factorybyte.demosc1.fragments.OptionBFragment;
 import com.factorybyte.demosc1.fragments.OptionCFragment;
+import com.factorybyte.demosc1.helpers.BottomNavigationViewHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         final BottomNavigationView navigationView = findViewById(R.id.navegation);
+
+        BottomNavigationViewHelper helper = new BottomNavigationViewHelper();
+
+        helper.removeShiftMode(navigationView);
 
         final ViewPager viewPager = findViewById(R.id.view_pager);
 
@@ -65,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.optionC:
                         viewPager.setCurrentItem(2);
                         return true;
+
                 }
                 return false;
             }
