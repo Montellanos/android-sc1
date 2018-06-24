@@ -5,12 +5,14 @@
     android:layout_height="match_parent"
     tools:context=".fragments.OptionBFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_b_fragment"
-        android:textSize="45sp"
-        android:textColor="@color/colorWhite"
-        android:gravity="center"/>
+        android:id="@+id/dresses_recyclerView"/>
+
+
+
+
+
 </FrameLayout>
