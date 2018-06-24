@@ -1,9 +1,11 @@
-package com.factorybyte.demosc1;
+package com.factorybyte.demosc1.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.factorybyte.demosc1.R;
 
 public class DetailActivity extends AppCompatActivity {
 

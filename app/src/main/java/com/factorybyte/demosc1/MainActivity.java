@@ -1,23 +1,18 @@
 package com.factorybyte.demosc1;
 
-import android.Manifest;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.media.Image;
-import android.net.Uri;
-import android.support.v4.app.ActivityCompat;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
+import com.factorybyte.demosc1.adapters.ViewPagerAdapter;
+import com.factorybyte.demosc1.fragments.OptionAFragment;
+import com.factorybyte.demosc1.fragments.OptionBFragment;
+import com.factorybyte.demosc1.fragments.OptionCFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +20,73 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        final BottomNavigationView navigationView = findViewById(R.id.navegation);
+
+        final ViewPager viewPager = findViewById(R.id.view_pager);
+
+
+        Fragment optionA = new OptionAFragment();
+        Fragment optionB = new OptionBFragment();
+        Fragment optionC = new OptionCFragment();
+
+
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
+
+        adapter.addFragment(optionA);
+        adapter.addFragment(optionB);
+        adapter.addFragment(optionC);
+
+        viewPager.setAdapter(adapter);
+
+
+
+
+
+
+
+
+
+        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+
+                switch (menuItem.getItemId()){
+
+                    case R.id.optionA :
+                        viewPager.setCurrentItem(0);
+                        return true;
+                    case R.id.optionB:
+                        viewPager.setCurrentItem(1);
+                        return true;
+                    case R.id.optionC:
+                        viewPager.setCurrentItem(2);
+                        return true;
+                }
+                return false;
+            }
+        });
+
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i1) {
+
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+                navigationView.getMenu().getItem(i).setChecked(true);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+
+            }
+        });
 
 
 
@@ -52,14 +114,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        RequestOptions options = new RequestOptions();
 
-        Glide
-                .with(this)
-                .load("https://images.pexels.com/photos/131699/pexels-photo-131699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-                .apply(options.centerCrop().fitCenter().circleCrop().diskCacheStrategy(DiskCacheStrategy.AUTOMATIC))
-                .thumbnail(0.1f)
-                .into(miimagen);
 
 
 
@@ -72,15 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        vermas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =  new Intent(getApplicationContext(), DetailActivity.class);
-                intent.putExtra("name", getResources().getString(R.string.name));
-                startActivity(intent);
 
-            }
-        });
 
 
         ImageButton llamar = findViewById(R.id.llamar);

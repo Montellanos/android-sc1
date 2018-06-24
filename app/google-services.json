@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "242020322942",
+    "firebase_url": "https://demoscfinal.firebaseio.com",
+    "project_id": "demoscfinal",
+    "storage_bucket": "demoscfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242020322942:android:b1c9d582c011f841",
+        "android_client_info": {
+          "package_name": "com.factorybyte.demosc1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242020322942-a6fp9469p6707r6ncenceaammj0t24vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.factorybyte.demosc1",
+            "certificate_hash": "e0f9a35e5c87fbeac6678fc72fc1d621996ff9aa"
+          }
+        },
+        {
+          "client_id": "242020322942-2ce6enua596j0fadgs323d46vss5p4i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLLBjlaR8ix4RaABUH_0sI-hHSzje4Vko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242020322942-2ce6enua596j0fadgs323d46vss5p4i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

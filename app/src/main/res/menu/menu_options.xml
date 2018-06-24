@@ -3,9 +3,9 @@
 
 
 
-    <item android:id="@+id/optionC"
+    <item android:id="@+id/optionA"
         android:icon="@drawable/icon_call"
-        android:title="Optiona C"/>
+        android:title="Optiona A"/>
 
 
     <item android:id="@+id/optionB"
@@ -13,19 +13,11 @@
         android:title="Optiona B"/>
 
 
-    <item android:id="@+id/optionA"
+    <item android:id="@+id/optionC"
         android:icon="@drawable/icon_call"
-        android:title="Optiona A"/>
+        android:title="Optiona C"/>
 
 
-
-    <item android:id="@+id/optionD"
-        android:icon="@drawable/icon_call"
-        android:title="Optiona D"/>
-
-    <item android:id="@+id/optionE"
-        android:icon="@drawable/icon_call"
-        android:title="Optiona E"/>
 
 
 
