@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+        /*
+
+
         ImageView miimagen = findViewById(R.id.miimage);
 
         ImageView photo = findViewById(R.id.photo);
@@ -119,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
+*/
 
 
 

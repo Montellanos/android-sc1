@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/optionC"
+        android:icon="@drawable/icon_call"
+        android:title="Optiona C"/>
+
+
+    <item android:id="@+id/optionB"
+        android:icon="@drawable/icon_call"
+        android:title="Optiona B"/>
+
+
+    <item android:id="@+id/optionA"
+        android:icon="@drawable/icon_call"
+        android:title="Optiona A"/>
+
+
+
+    <item android:id="@+id/optionD"
+        android:icon="@drawable/icon_call"
+        android:title="Optiona D"/>
+
+    <item android:id="@+id/optionE"
+        android:icon="@drawable/icon_call"
+        android:title="Optiona E"/>
+
+
+
+
+
+
+</menu>
